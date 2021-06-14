@@ -1,0 +1,32 @@
+Steps: 
+
+1. start powershell
+2. create a directory (USING: mkdir [directory]) or go to (USING: cd [directory]) a directory where you want to store local github repository.
+
+3.run the git config commands to bind your github account with the git software in your computer. The commands are:
+	git config --global user.name "LibertyCarassius"
+	git config --global user.email "dilashalamichhane@outlook.com"
+
+4. copy the HTTPS Repository Link of your Github Repository to establish a local repository for that repository. enter the following command to clone the Github repository into your repository.
+	git clone [repository_https_URL]
+
+5. Now a local repository of the same name is added to your computer.
+
+6. You can now add files and folders into this local repository.
+
+7. Use the following command to track the status of the files in your local repository and their situation in the Github directory.
+	git status -v
+
+8. If a name is shown in red, it means git is not tracking that file. To, track the file we must add that file to the git "environment" by using this command:
+	git add [filename]
+
+9. On using "git status -v" command again, we can see that the file after being added to the environment is green in color.
+
+10. Before pushing away the file we must always submit some type of comment along with our modification to confirm that the  addition of our file was meaningful. We can do that using:
+	git commit -m "commit message here"
+
+11. Now we are ready to send away our files and modifications. All we have to use is this command:
+	git push
+
+This is how you add something to your Github repo from your computer.
+
